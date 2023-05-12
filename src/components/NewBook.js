@@ -1,23 +1,33 @@
 import React from 'react';
 import Card from './UI/Card';
 
+const categories = ['Category', 'Action', 'Romance', 'Economy', 'History', 'Fantasy', 'Science Fiction'];
+
 const NewBook = () => (
   <Card>
     <h3>Add New Book</h3>
     <form>
       <div>
-        <input type="text" placeholder="Book Title" />
+        <label htmlFor="title">
+          Book Title:
+          <input type="text" id="title" name="title" placeholder="Book Title" />
+        </label>
       </div>
       <div>
-        <select>
-          <option value="Category">Category</option>
-          <option value="Action">Action</option>
-          <option value="Romance">Romance</option>
-          <option value="Economy">Economy</option>
-          <option value="History">History</option>
-          <option value="Fantasy">Fantasy</option>
-          <option value="Science Fiction">Science Fiction</option>
-        </select>
+        <label htmlFor="author">
+          Author:
+          <input type="text" id="author" name="author" placeholder="Author" />
+        </label>
+      </div>
+      <div>
+        <label htmlFor="category">
+          Category:
+          <select id="category" name="category">
+            {categories.map((category) => (
+              <option key={category} value={category}>{category}</option>
+            ))}
+          </select>
+        </label>
       </div>
       <div>
         <button type="button">Add Book</button>
