@@ -130,6 +130,7 @@ npm run build
 ## 🔭 Future Features <a name="future-features"></a>
 
 - ** I will add api call to make CRUD operation with book list**
+- ** I will add style to the Bookstore webiste**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
