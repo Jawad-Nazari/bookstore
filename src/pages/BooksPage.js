@@ -25,13 +25,16 @@ const BOOKS_DATA = [
   },
 ];
 
-const BooksPage = () => (
-  <section className="BooksPage">
-    <Card>
-      <BooksList books={BOOKS_DATA} />
-      <NewBook />
-    </Card>
-  </section>
-);
+const BooksPage = () => {
+  const removeBookHandler = () => {};
+  return (
+    <section className="BooksPage">
+      <Card>
+        <BooksList onRemoveBook={removeBookHandler} books={BOOKS_DATA} />
+        <NewBook />
+      </Card>
+    </section>
+  );
+};
 
 export default BooksPage;

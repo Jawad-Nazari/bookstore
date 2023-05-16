@@ -1,21 +1,34 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Book from './Book';
 
-const BooksList = ({ books }) => (
+const BooksList = ({ books, onRemoveBook }) => (
   <ul>
     {books.map(({
       id, title, author, category,
     }) => (
-      <Book key={id} id={id} title={title} author={author} category={category} />
+      <Book
+        key={id}
+        id={id}
+        title={title}
+        author={author}
+        category={category}
+        onRemoveBookHandler={onRemoveBook}
+      />
     ))}
   </ul>
 );
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf.isRequired,
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
+      category: PropTypes.string,
+    }),
+  ).isRequired,
+  onRemoveBook: PropTypes.func.isRequired,
 };
-
 export default BooksList;
