@@ -43,6 +43,12 @@ The Bookstore application uses React for building the user interface, and Redux 
   </ul>
 </details>
 <details>
+  <summary>Redux</summary>
+  <ul>
+    <li><a href="#">Redux</a></li>
+  </ul>
+</details>
+<details>
   <summary>CSS</summary>
   <ul>
     <li><a href="#">CSS</a></li>
@@ -61,7 +67,7 @@ The Bookstore application uses React for building the user interface, and Redux 
 ### Key Features <a name="key-features"></a>
 
 - **[Setup with create-react-app]**
-- **[Setup linters for React/Redux]**
+- **[Used Redux Toolkit]**
 - **[User can read book]**
 - **[User can make CRUD operation with the book list]**
 
