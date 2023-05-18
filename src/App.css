@@ -10,7 +10,7 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   color: #292828;
-  background: white;
+  background: rgb(248, 246, 246);
 }
 
 a {
