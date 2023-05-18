@@ -130,8 +130,8 @@ npm run build
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- ** I will add style to the Bookstore webiste**
 - ** I will update the category page**
+- ** I will host it on Render**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
