@@ -11,11 +11,10 @@
 .modalContainer {
   position: fixed;
   top: 20vh;
-  left: 5%;
-  width: 80%;
+  left: 25%;
+  width: 40%;
   background-color: white;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
   min-height: 10rem;
@@ -25,14 +24,14 @@
 @media (min-width: 768px) {
   .modal {
     width: 40rem;
-    left: calc(50% - 20rem);
+    left: calc(40% - 10rem);
   }
 }
 
 @keyframes slide-down {
   from {
     opacity: 0;
-    transform: translateY(-3rem);
+    transform: translateY(-2rem);
   }
 
   to {

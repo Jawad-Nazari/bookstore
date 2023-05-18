@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { uiActions } from './redux/ui/uiSlice';
 import Modal from './components/UI/Modal';
-import Spinner from './components/UI/LoadingIndicator';
+import LoadingIndicator from './components/UI/LoadingIndicator';
 
 import Layout from './components/UI/Layout';
 import BooksPage from './pages/BooksPage';
@@ -27,19 +27,19 @@ const App = () => {
     <Layout>
       {showModal && (
         <Modal onClick={closeModalHandler}>
-          {loading && <Spinner />}
+          {loading && <LoadingIndicator />}
           {message !== '' && (
-            <div className="modal_message">
+            <div className="model-message">
               <h3>{isError ? 'Error' : 'Success'}</h3>
               <p className={isError ? 'action-error' : 'action-success'}>
                 {message}
               </p>
               <button
-                className="btn_close_modal"
+                className="btn-close"
                 onClick={closeModalHandler}
                 type="button"
               >
-                OKAY
+                OK
               </button>
             </div>
           )}
