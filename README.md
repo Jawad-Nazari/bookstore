@@ -70,6 +70,7 @@ The Bookstore application uses React for building the user interface, and Redux 
 - **[Used Redux Toolkit]**
 - **[User can read book]**
 - **[User can make CRUD operation with the book list]**
+- **[Used Bookstore API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,8 +130,8 @@ npm run build
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- ** I will add api call to make CRUD operation with book list**
 - ** I will add style to the Bookstore webiste**
+- ** I will update the category page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

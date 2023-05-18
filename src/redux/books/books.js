@@ -3,7 +3,6 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { uiActions } from '../ui/uiSlice';
 
-// initialize the api url in axios default url
 axios.defaults.baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/AL3jlDWauW8xqK5fxtQG/books';
 
 export const fetchBooks = createAsyncThunk(
